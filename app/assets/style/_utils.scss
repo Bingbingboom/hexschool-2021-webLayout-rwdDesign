@@ -1,0 +1,245 @@
+// 字體大小
+.h1{
+    font-size: 64px;
+}
+.h2{
+    font-size: 48px;
+    @include pad(){
+        font-size: 32px;
+    }
+    @include pad-mobile(){
+        font-size: 24px;
+    }
+}
+.h3{
+    font-size: 36px;
+}
+.h4{
+    font-size: 32px;
+}
+.h5{
+    font-size: 24px;
+}
+.h6{
+    font-size: 20px;
+}
+.font-xs{
+    font-size: 14px;
+}
+.font-s{
+    font-size: 18px;
+}
+.font-m{
+    font-size: 42px;
+}
+.font-l{
+    font-size: 72px;
+}
+
+// height
+.h-100{
+    height: 100%;
+}
+
+// width
+.w-100{
+    width: 100%;
+}
+
+// line height
+.lh-normal{
+    line-height: 1.5;
+}
+
+// 字體粗細
+.fw-light{
+    font-weight: lighter;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-black{
+    font-weight: 900;
+}
+
+// 字體顏色
+.text-primary{
+    color: $primary;
+}
+.text-secondary{
+    color: $secondary;
+}
+.text-white{
+    color: #FFF;
+}
+
+// 背景
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-pink{
+    background-color: $pink;
+}
+.bg-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// 字體對齊
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+
+// display
+.d-inline-block{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+} 
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+.d-sm-none{
+    @include pad-mobile(){
+        display: none;
+    }
+}
+.d-sm-block{
+    @include pad-mobile(){
+        display: block;
+    }
+}
+
+// Position
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+}
+.position-sm-absolute{
+    @include pad-mobile(){
+        position: absolute;
+    }
+}
+
+// Flex
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-md-row{
+    @include pad(){
+        flex-direction: row;
+    }
+}
+.flex-sm-column{
+    @include mobile(){
+        flex-direction: column;
+    }
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-baseline{
+    align-items: baseline;
+}
+.justify-content-sm-center{
+    @include pad-mobile(){
+        justify-content: center;
+    }
+}
+
+.align-items-sm-start{
+    @include mobile(){
+        align-items: flex-start;
+    }
+}
+// margin, padding
+.mb-s{
+    margin-bottom: 20px;
+}
+.mb-md-s{
+    @include pad(){
+        margin-bottom: 20px;
+    }
+}
+.mb-l{
+    margin-bottom: 60px;
+}
+
+@for $i from 1 to 10 {   // 1 ~ 9 (?)
+    .mb-#{$i}{
+        margin-bottom: $spacing * $i;
+    }
+}
+@for $i from 1 to 10 {
+    .mb-md-#{$i}{
+        @include pad(){
+            margin-bottom: $spacing * $i;
+        }
+    }
+}
+@for $i from 1 to 10 {
+    .mb-sm-#{$i}{
+        @include pad-mobile(){
+            margin-bottom: $spacing * $i;
+        }
+    }
+}
+
+@for $i from 1 to 9 {   
+    .pb-#{$i}{
+        padding-bottom: $spacing * $i;
+    }
+}
+
+// 
+.link-border{
+    border-bottom: 1px solid transparent;
+    &:hover{
+        border-bottom: 1px solid #FFF;
+    }
+}
+
+//
+.logo-hover:hover{
+    transform: rotateZ(15deg);
+    transition: all 0.3s;
+}
+
+// 
+.object-cover{
+    object-fit: cover;
+}

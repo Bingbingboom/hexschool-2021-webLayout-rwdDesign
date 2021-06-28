@@ -1,0 +1,60 @@
+// Card
+.card{
+    &-img{
+        width: 100%;
+    }
+    &-body{
+        border: 1px solid $gray-300;
+        padding: 16px;
+    }
+    &-title{
+        font-size: 14px;
+        line-height: 21px;
+        color: #212529;
+        margin-bottom: 7px;
+        @include pad(){
+            margin-bottom: 16px;
+        }
+    }
+    &-text{
+        margin-bottom: 10px;
+        @include pad(){
+            margin-bottom: 16px;
+        }
+    }
+    &-time{
+        font-size: 14px;
+        line-height: 21px;
+        color: $gray-500;
+    }
+}
+
+// Form
+.form{
+    &-group{
+        margin-bottom: 16px;
+        @include pad(){
+            margin-bottom: 8px;
+        }
+    }
+    &-label{
+        display: block;
+        margin-bottom: 4px;
+        font-size: 14px;
+        @include pad(){
+            margin-bottom: 2px;
+        }
+    }
+    &-control{
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 14px;
+        @include pad(){
+            padding: 8px 12px;
+        }
+    }
+    &-inline{
+        display: flex;
+        align-items: baseline;
+    }
+}
