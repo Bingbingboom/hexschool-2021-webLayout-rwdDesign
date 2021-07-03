@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Glasses | Location
+    </title>
+    <link rel="shortcut icon" href="https://www.flaticon.com/premium-icon/icons/svg/2043/2043521.svg">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- 字型設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <!-- 自定義 -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <header class="header bg-secondary d-flex justify-content-between align-items-center">
+        <h1><a href="./index.html" class="logo logo-hover">Eyeclasses</a></h1>
+        <ul class="d-flex flex-wrap menu">
+            <li><a href="./products_op.html" class="h6 link-border text-white">系列鏡框</a></li>
+            <li><a href="location.html" class="h6 link-border text-white">門市據點</a></li>
+            <li><a href="blog.html" class="h6 link-border text-white">部落格</a></li>
+            <li><a href="question.html" class="h6 link-border text-white">常見問題</a></li>
+        </ul>
+    </header>
+
+    <!-- 門市 / 常見問題 Banner -->
+    <div class="infoBanner bg-cover">
+        <div class="container h-100 d-flex align-items-end">
+            <h2 class="h1 fw-bold d-flex align-items-center">
+                門市據點
+                    <img src="assets/images/icon-location.svg" alt="location icon">
+            </h2>
+        </div>
+    </div>
+
+
+    
+<!-- 門市據點資訊內頁 -->
+
+<div class="location container">
+    <div class="form-group form-inline align-items-center justify-content-sm-between mb-4 mb-md-3 mb-sm-s">
+        <label for="store" class="location-label h5">選擇分店</label>
+        <select name="city" id="store" class="location-select form-select">
+            <option value="taipeiStore" selected>台北中山旗艦店</option>
+            <option value="kaohsiungStore">高雄中山旗艦店</option>
+            <option value="tainanStore">台南中山旗艦店</option>
+            <option value="taichungStore">台中中山旗艦店</option>
+        </select>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between">
+        <div class="locationInfo card d-md-flex justify-content-md-between d-sm-block mb-md-4">
+            <img src="assets/images/locate1.jpeg" alt="location" class="location-img card-img h-100 object-cover">
+            <div class="locationInfo-body">
+                <div class="card-header">
+                    <h3 class="card-title h5 m-0">台北中山旗艦店</h3>
+                </div>
+                <ul class="card-body">
+                    <li class="h6 d-flex align-items-center mb-1">
+                        <img src="assets/images/icon-phone-black.svg" alt="" class="card-img card-icon">
+                        電話：<a href="tel:+02-0001234" class="location-contact text-dark">(02)000-1234</a>
+                    </li>
+                    <li class="h6 d-flex align-items-center mb-1">
+                        <img src="assets/images/icon-clock-black.svg" alt="" class="card-img card-icon">
+                        營業時間：10:00-21:00
+                    </li>
+                    <li class="h6 d-flex align-items-start mb-1">
+                        <img src="assets/images/icon-map.svg" alt="" class="card-img card-icon">
+                        <a href="#" class="location-contact text-dark">地址：台北市中山區南京東路25巷2-1號</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="locationInfo-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637552808626!2d121.53568141484229!3d25.052266183963845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1625214574724!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" class="map h-100 w-100"></iframe>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer bg-secondary">
+        <div class="container">
+            <div class="footer-info pb-3 mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <ul class="footer-menu d-flex align-items-center">
+                        <li><a href="index.html" class="link-border text-white">首頁</a></li>
+                        <li><a href="products_op.html" class="link-border text-white">系列鏡框</a></li>
+                        <li><a href="location.html" class="link-border text-white">門市據點</a></li>
+                        <li><a href="blog.html" class="link-border text-white">部落格</a></li>
+                        <li><a href="question.html" class="link-border text-white">常見問題</a></li>
+                    </ul>
+                    <ul class="d-flex footer-media">
+                        <li><a href="#" class="text-white"><i class="fab fa-facebook h2"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="fab fa-instagram h2"></i></a></li>
+                        <li><a href="#" class="text-white"><i class="fab fa-line h2"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="footer-contact">
+                    <li class="d-flex align-items-center mb-3 mb-md-2 mb-sm-1">
+                        <i class="fas fa-phone-alt text-white"></i>
+                        <a href="tel:+0800-000-000" class="link-border text-white h3">0800-000-000</a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="far fa-envelope text-white"></i>
+                        <a href="mailto:glasses@business.com"
+                            class="link-border text-white h3">glasses@business.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright d-flex">
+                <a href="index.html" class="footer-logo logo-hover"><img src="assets/images/logo.png"
+                        alt="logo"></a>
+                <div
+                    class="d-flex flex-sm-column justify-content-between align-items-center align-items-sm-start w-100">
+                    <p class="text-white mb-sm-1">Copyright © 2020 Glasses.All rights reserved.</p>
+                    <ul class="d-flex flex-sm-column">
+                        <li class="mb-sm-1"><a href="#"
+                                class="link-border d-inline-block text-white font-xs">隱私權政策</a></li>
+                        <li><a href="#" class="link-border d-inline-block text-white font-xs">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
