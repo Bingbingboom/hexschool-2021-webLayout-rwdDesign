@@ -336,3 +336,8 @@
 .object-cover{
     object-fit: cover;
 }
+
+// active
+.productsMenu .active{
+    border-bottom-color: $secondary;
+}

@@ -25,6 +25,9 @@
     }
     .card{
         width: 25%;
+        @include pc-pad(){
+            width: 33.3%;
+        }
         @include pad(){
             width: 50%;
         }
