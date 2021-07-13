@@ -711,6 +711,9 @@ img {
   -o-object-fit: cover;
      object-fit: cover; }
 
+.productsMenu .active {
+  border-bottom-color: #AA0601; }
+
 .header {
   padding: 30px 88px; }
   @media (max-width: 768px) {
@@ -928,7 +931,7 @@ img {
     .productsMenu-icon {
       height: 14px; } }
 
-.productsMenu a:hover, .productsMenu .active {
+.productsMenu a:hover {
   border-bottom-color: #AA0601; }
 
 .productsBanner-img {
@@ -1241,6 +1244,9 @@ img {
       padding-bottom: 56px; } }
   .productsOp .card {
     width: 25%; }
+    @media (max-width: 992px) {
+      .productsOp .card {
+        width: 33.3%; } }
     @media (max-width: 768px) {
       .productsOp .card {
         width: 50%; } }
