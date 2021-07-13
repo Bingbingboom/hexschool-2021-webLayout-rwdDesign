@@ -1,0 +1,107 @@
+.location{
+    padding-top: 16px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-top: 8px;
+        padding-bottom: 104px;
+    }
+    @include pad-mobile(){
+        padding-bottom: 56px;
+    }
+    &-label{
+        margin-right: 20px;
+        @include pad(){
+            font-size: 16px;
+        }
+        @include pad-mobile(){
+            font-size: 14px;
+            margin-right: 0;
+        }
+    }
+    &-select{
+        width: 324px;
+        @include pad(){
+            width: 237px;
+        }
+        @include pad-mobile(){
+            width: 80%;
+        }
+    }
+    &-img{
+        height: 224px;
+        @include pad(){
+            height: 164px;
+        }
+    }
+    &-link{
+        padding: 20px 0;
+        @include pad(){
+            padding: 16px 0;
+            font-size: 14px;
+        }
+    }
+    &-contact:hover{
+        opacity: 0.5;
+    }
+    .card{
+        width: 33.3%;
+        @include pad(){
+            width: 50%;
+        }
+        @include pad-mobile(){
+            width: 100%;  
+        }
+    }
+    h3{
+        @include pad(){
+            font-size: 16px;
+        }
+    }
+    .card-body li{
+        @include pad(){
+            font-size: 14px;
+        }
+    }
+}
+
+.locationInfo{
+    margin-left: -15px;
+    margin-right: -15px;
+    @include pad(){
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &-map{
+        width: 57%;
+        @include pad(){
+            width: 100%;
+            height: 465px;
+        }
+    }
+    .location-img{
+        @include pad(){
+            width: 49%;
+        }
+        @include pad-mobile(){
+            width: 100%
+        }
+    }
+    &-body{
+        @include pad(){
+            width: 49%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+        }
+    }
+
+}
+
+.locationInfo.card{
+    width: 41%;
+    @include pad(){
+        width: 100%;
+    }
+}

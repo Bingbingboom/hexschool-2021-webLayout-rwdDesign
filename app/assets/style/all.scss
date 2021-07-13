@@ -3,10 +3,18 @@
 
 @import "mixin";
 @import "base";
-@import "utils";
 @import "components";
+@import "utils";
 
-@import "layout";
-@import "productsLayout";
+// Layout
+@import "layout/layout";
+@import "layout/productsLayout";
+@import "layout/infoLayout";
+@import "layout/blogLayout";
 
-@import "index";
+// Pages
+@import "pages/index";
+@import "pages/products";
+@import "pages/location";
+@import "pages/question";
+@import "pages/blog";

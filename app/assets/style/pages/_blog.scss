@@ -1,0 +1,224 @@
+// 文章列表
+.blogArticles{
+    padding-top: 82px;
+    padding-bottom: 156px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include pad-mobile(){
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+    &-img{
+        width: 57%;
+        @include pad(){
+            width: 48%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    &-body{
+        width: 41%;
+        @include pad(){
+            width: 48%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+        }
+    }
+    &-intro{
+        color: $gray-600;
+        @include pad(){
+            font-size: 14px;
+        }
+        a{
+            color: $gray-600;
+            &:hover{
+                color: $secondary;
+            }
+        }
+    }
+    &-link{
+        &:hover{
+            color: $secondary;
+        }
+    }
+    h2{
+        @include pad(){
+            font-size: 20px;
+        }
+        @include pad-mobile(){
+            font-size: 16px;
+        }
+    }
+    h3{
+        @include pad(){
+            font-size: 16px;
+        }
+        @include pad-mobile(){
+            font-size: 14px;
+        }
+        span{
+            @include pad(){
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+// 文章
+.article{
+    padding-top: 8px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-bottom: 104px;
+    }
+    @include pad-mobile(){
+        padding-bottom: 56px;
+    }
+    h2{
+        margin-bottom: 5px;
+        @include pad-mobile(){
+            font-size: 20px;
+        }
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 31px;
+        @include pad(){
+            font-size: 16px;
+            margin-bottom: 17px;
+        }
+        @include pad-mobile(){
+            font-size: 14px;
+            margin-bottom: 19px;
+        }
+        span{
+            font-size: 16px;
+            color: #6C6C6C;
+            @include pad(){
+                font-size: 14px;
+            }
+        }
+    }
+    p{
+        font-size: 20px;
+        color: $dark-200;
+        @include pad(){
+            font-size: 16px;
+        }
+    }
+    &-hashtag{
+        display: flex;
+        a{
+            margin-right: 16px;
+            @include pad(){
+                font-size: 16px;
+                margin-right: 8px;
+            }
+            @include pad-mobile(){
+                font-size: 14px;
+            }
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    &-body{
+        width: 74%;
+        margin-bottom: 50px;
+        @include pad(){
+            margin-bottom: 27px;
+        }
+        @include pad-mobile(){
+            width: 100%;
+            margin-bottom: 31px;
+        }
+    }
+    &-tags{
+        width: 24%;
+        @include pad-mobile(){
+            width: 100%;
+            order: 1;
+        }
+        h4{
+            font-size: 28px;
+            @include pad(){
+                font-size: 20px;
+                margin-bottom: 6px;
+            }
+            @include pad-mobile(){
+                margin-bottom: 11px;
+            }
+        }
+        img{
+            @include pad(){
+                width: 24px;
+            }
+        }
+        a{
+            @include pad(){
+                font-size: 16px;
+                margin-right: 16px;
+            }
+            @include pad-mobile(){
+                margin-right: 8px;
+            }
+            &:hover{
+                color: $primary;
+            }
+            &:nth-child(odd){
+                margin-right: 24px;
+                @include pad-mobile(){
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    &-links{
+        width: 74%;
+        @include pad(){
+            width: 100%;
+        }
+    }
+    &-share{
+        border-bottom: 1px solid #707070;
+        p{
+            margin-right: 19px;
+            @include pad(){
+                margin-right: 16px;
+            }
+        }
+        li{
+            margin-right: 16px;
+        }
+        a{
+            color: $dark-200;
+            &:hover{
+                color: $secondary;
+            }
+        }
+        
+    }
+    &-pages{
+        a:first-child img{
+            margin-right: 8px;
+        }
+        a:last-child img{
+            margin-left: 8px;
+            @include pad-mobile(){
+                margin-right: 8px;
+                margin-left: 0;
+            }
+        }
+        a:hover{
+            color: $secondary;
+        }
+    }
+}

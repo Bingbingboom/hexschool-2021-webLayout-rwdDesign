@@ -1,0 +1,27 @@
+.infoBanner{
+    background-image: url(../images/qa.png);
+    height: 304px;
+    @include pad-mobile(){
+        height: 143px;
+    }
+    h2{
+        @include pad(){
+            font-size: 48px;
+        }
+        @include pad-mobile(){
+            font-size: 28px;
+        }
+    }
+    img{
+        margin-left: 24px;
+        height: 58px;
+        @include pad(){
+            margin-left: 16px;
+            height: 48px;
+        }
+        @include pad-mobile(){
+            margin-left: 8px;
+            height: 24px;
+        }
+    }
+}

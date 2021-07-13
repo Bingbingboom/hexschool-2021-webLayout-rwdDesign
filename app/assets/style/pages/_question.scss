@@ -1,0 +1,32 @@
+.question{
+    padding-top: 80px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include pad-mobile(){
+        padding-top: 24px;
+        padding-bottom: 56px;
+    }
+    p{
+        width: 80%;
+        @include pad(){
+            width: 92%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+    h3{
+        @include pad-mobile(){
+            font-size: 20px;
+        }
+    }
+    h4{
+        @include pad-mobile(){
+            font-size: 16px;
+        }
+    }
+}

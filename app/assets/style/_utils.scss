@@ -35,6 +35,9 @@
 .font-l{
     font-size: 72px;
 }
+.font-normal{
+    font-size: 16px;
+}
 
 // height
 .h-100{
@@ -72,6 +75,12 @@
 .text-white{
     color: #FFF;
 }
+.text-black{
+    color: #000;
+}
+.text-dark{
+    color: $dark-100;
+}
 
 // 背景
 .bg-primary{
@@ -83,10 +92,21 @@
 .bg-pink{
     background-color: $pink;
 }
+.bg-brown400{
+    background-color: $brown-400;
+}
+.bg-brown100{
+    background-color: $brown-100;
+}
 .bg-cover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+// Border
+.border-0{
+    border: 0;
 }
 
 // 字體對齊
@@ -115,6 +135,26 @@
 }
 .d-none{
     display: none;
+}
+.d-md-flex{
+    @include pad(){
+        display: flex;
+    }
+}
+.d-md-inline-block{
+    @include pad(){
+        display: inline-block;
+    }
+}
+.d-md-block{
+    @include pad(){
+        display: block;
+    }
+}
+.d-md-none{
+    @include pad(){
+        display: none;
+    }
 }
 .d-sm-none{
     @include pad-mobile(){
@@ -155,8 +195,13 @@
         flex-direction: row;
     }
 }
+.flex-sm-row{
+    @include pad-mobile(){
+        flex-direction: row;
+    }
+}
 .flex-sm-column{
-    @include mobile(){
+    @include pad-mobile(){
         flex-direction: column;
     }
 }
@@ -169,49 +214,93 @@
 .justify-content-end{
     justify-content: flex-end;
 }
+.align-items-start{
+    align-items: start;
+}
 .align-items-center{
     align-items: center;
 }
 .align-items-baseline{
     align-items: baseline;
 }
+.align-items-end{
+    align-items: flex-end;
+}
+.justify-content-md-start{
+    @include pad(){
+        justify-content: flex-start;
+    }
+}
+.justify-content-md-end{
+    @include pad(){
+        justify-content: flex-end;
+    }
+}
+.justify-content-md-between{
+    @include pad(){
+        justify-content: space-between;
+    }
+}
 .justify-content-sm-center{
     @include pad-mobile(){
         justify-content: center;
     }
 }
-
+.justify-content-sm-between{
+    @include pad-mobile(){
+        justify-content: space-between;
+    }
+}
+.align-items-sm-stretch{
+    @include pad-mobile(){
+        align-items: stretch;
+    }
+}
 .align-items-sm-start{
-    @include mobile(){
+    @include pad-mobile(){
         align-items: flex-start;
     }
 }
 // margin, padding
+.m-0{
+    margin: 0;
+}
 .mb-s{
     margin-bottom: 20px;
+}
+.mb-m{
+    margin-bottom: 36px;
+}
+.mb-l{
+    margin-bottom: 60px;
+}
+.mb-xl{
+    margin-bottom: 100px;
+}
+@for $i from 0 to 15 {   // 1 ~ 14 (?)
+    .mb-#{$i}{
+        margin-bottom: $spacing * $i;
+    }
 }
 .mb-md-s{
     @include pad(){
         margin-bottom: 20px;
     }
 }
-.mb-l{
-    margin-bottom: 60px;
-}
-
-@for $i from 1 to 10 {   // 1 ~ 9 (?)
-    .mb-#{$i}{
-        margin-bottom: $spacing * $i;
-    }
-}
-@for $i from 1 to 10 {
+@for $i from 0 to 15 {
     .mb-md-#{$i}{
         @include pad(){
             margin-bottom: $spacing * $i;
         }
     }
 }
-@for $i from 1 to 10 {
+
+.mb-sm-s{
+    @include pad-mobile(){
+        margin-bottom: 20px;
+    }
+}
+@for $i from 0 to 15 {
     .mb-sm-#{$i}{
         @include pad-mobile(){
             margin-bottom: $spacing * $i;
@@ -219,7 +308,11 @@
     }
 }
 
-@for $i from 1 to 9 {   
+.p-0{
+    padding: 0;
+}
+
+@for $i from 0 to 9 {   
     .pb-#{$i}{
         padding-bottom: $spacing * $i;
     }

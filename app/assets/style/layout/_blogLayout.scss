@@ -1,0 +1,25 @@
+.blogBanner{
+    padding-top: 12px;
+    padding-bottom: 14px;
+    @include pad(){
+        font-size: 16px;
+    }
+    ul{
+        @include pad-mobile(){
+            width: 100%;
+        }
+    }
+    li{
+        margin-right: 48px;
+        @include pad(){
+            margin-right: 32px;
+        }
+        @include pad-mobile(){
+            margin-right: 0;
+        }
+    }
+}
+.searchIcon:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}

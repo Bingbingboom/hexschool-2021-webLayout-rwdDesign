@@ -1,0 +1,49 @@
+---
+title: Glasses | Location
+layout: ./app/infoLayout.ejs
+engine: ejs
+current: index
+pageName: 門市據點
+icon: location
+---
+
+<!-- 門市據點資訊內頁 -->
+
+<div class="location container">
+    <div class="form-group form-inline align-items-center justify-content-sm-between mb-4 mb-md-3 mb-sm-s">
+        <label for="store" class="location-label h5">選擇分店</label>
+        <select name="city" id="store" class="location-select form-select">
+            <option value="taipeiStore" selected>台北中山旗艦店</option>
+            <option value="kaohsiungStore">高雄中山旗艦店</option>
+            <option value="tainanStore">台南中山旗艦店</option>
+            <option value="taichungStore">台中中山旗艦店</option>
+        </select>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between">
+        <div class="locationInfo card d-md-flex justify-content-md-between d-sm-block mb-md-4">
+            <img src="assets/images/locate1.jpeg" alt="location" class="location-img card-img h-100 object-cover">
+            <div class="locationInfo-body">
+                <div class="card-header">
+                    <h3 class="card-title h5 m-0">台北中山旗艦店</h3>
+                </div>
+                <ul class="card-body">
+                    <li class="h6 d-flex align-items-center mb-1">
+                        <img src="assets/images/icon-phone-black.svg" alt="" class="card-img card-icon">
+                        電話：<a href="tel:+02-0001234" class="location-contact text-dark">(02)000-1234</a>
+                    </li>
+                    <li class="h6 d-flex align-items-center mb-1">
+                        <img src="assets/images/icon-clock-black.svg" alt="" class="card-img card-icon">
+                        營業時間：10:00-21:00
+                    </li>
+                    <li class="h6 d-flex align-items-start mb-1">
+                        <img src="assets/images/icon-map.svg" alt="" class="card-img card-icon">
+                        <a href="#" class="location-contact text-dark">地址：台北市中山區南京東路25巷2-1號</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="locationInfo-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637552808626!2d121.53568141484229!3d25.052266183963845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1625214574724!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" class="map h-100 w-100"></iframe>
+        </div>
+    </div>
+</div>

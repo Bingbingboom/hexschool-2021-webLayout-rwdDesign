@@ -1,0 +1,137 @@
+.products{
+    img:hover{
+        opacity: 0.5;
+    }
+    h4,p{
+        text-transform: uppercase;
+    }
+    &-link:hover{
+        transform: scale(1.1);
+        transition: all 0.3s;
+    }
+}
+
+// Optical
+.productsOp{
+    padding-top: 88px;
+    padding-bottom: 156px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 104px;  
+    }
+    @include pad-mobile(){
+        padding-top: 30px;
+        padding-bottom: 56px; 
+    }
+    .card{
+        width: 25%;
+        @include pad(){
+            width: 50%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+        }
+    }
+    img{
+        height: 164px;
+        @include pad-mobile(){
+            height: 166px;
+        }
+    }
+    h2{
+        @include pad-mobile(){
+            font-size: 20px;
+        }
+    }
+    h3{
+        @include pad-mobile(){
+            font-size: 16px;
+        }
+    }
+    h4,p{
+        @include pad-mobile(){
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    &-link{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        @include pad-mobile(){
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
+
+// Sunglasses
+.productsSun{
+    padding-top: 88px;
+    padding-bottom: 304px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include pad-mobile(){
+        padding-top: 30px;
+        padding-bottom: 56px;
+    }
+    .card{
+        width: 33.3%;
+        @include pad(){
+            width: 50%;
+        }
+        @include pad-mobile(){
+            width: 100%;
+        }
+    }
+    img{
+        height: 224px;
+        @include pad(){
+            height: 164px;
+        }
+        @include pad-mobile(){
+            height: 166px;
+        }
+    }
+    h2{
+        @include pad(){
+            font-size: 32px;
+        }
+        @include pad-mobile(){
+            font-size: 20px;
+        }
+    }
+    h3{
+        @include pad(){
+            font-size: 24px;
+        }
+        @include pad-mobile(){
+            font-size: 16px;
+        }
+    }
+    h4,p{
+        @include pad(){
+            font-size: 24px;
+        }
+        @include pad-mobile(){
+            font-size: 16px;
+        }
+    }
+    &-link{
+        width: 19px;
+        height: 19px;
+        margin-right: 8px;
+        @include pad(){
+            width: 24px;
+            height: 24px;
+        }
+        @include pad-mobile(){
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
